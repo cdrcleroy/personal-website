@@ -4167,7 +4167,7 @@ td:last-child {
     align-items   : center;
     font-family   : var(--font-1);
     font-weight   : 500;
-    font-size     : var(--text-huge-1);
+    font-size     : var(--text-huge-2);
     letter-spacing: -0.035em;
     line-height   : 1;
     color         : var(--color-3-dark);
