@@ -4137,18 +4137,18 @@ td:last-child {
 
 
 /* ===================================================================
- * # NUMBERS
+ * # SERVICES
  *
  *
  * ------------------------------------------------------------------- */
-.s-numbers {
+.s-services {
     padding-top     : var(--vspace-5_5);
     padding-bottom  : var(--vspace-4);
     background-color: var(--color-gray-10);
     color           : var(--color-text-light);
 }
 
-.s-numbers h5 {
+.s-services h5 {
     font-family  : var(--font-1);
     font-weight  : 500;
     margin-top   : 0;
