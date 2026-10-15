@@ -1,496 +1,357 @@
-<!DOCTYPE html>
-<html lang="fr" class="no-js">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Cédric Leroy - Créateur de sites web pour particuliers et PME. Contactez-moi pour des solutions personnalisées."
-    />
-    <title>Cédric Leroy - Développeur Web | Création de Sites Internet</title>
+<!doctype html>
+<html lang="fr">
 
-    <script>
-      document.documentElement.classList.remove("no-js");
-      document.documentElement.classList.add("js");
-    </script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Cédric Leroy, développeur web freelance. Création de sites vitrines, boutiques en ligne et outils web sur mesure pour indépendants, artisans et petites entreprises.">
+  <meta name="theme-color" content="#0b0b0d">
 
-    <!-- Fonts
-    ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <title>Cédric Leroy — Développeur web freelance</title>
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.min.css" />
-    <link rel="stylesheet" href="css/styles.min.css" />
+  <meta property="og:title" content="Cédric Leroy — Développeur web freelance">
+  <meta property="og:description"
+    content="Sites vitrines, e-commerce et outils web sur mesure pour indépendants, artisans et petites entreprises.">
+  <meta property="og:type" content="website">
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-  </head>
+  <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icons/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="images/icons/site.webmanifest">
 
-  <body id="top">
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-      <div id="loader" class="dots-fade">
-        <div></div>
-        <div></div>
-        <div></div>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Accueil">
+        <span class="brand-mark" aria-hidden="true">CL</span>
+        <span class="brand-name">Cédric Leroy</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="#realisations">Réalisations</a>
+        <a href="#services">Services</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#contact">Contact</a>
+        <a class="button button--small button--dark" href="mailto:cdrc.leroy@gmail.com?subject=Projet%20web">
+          Discuter d’un projet
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Développeur web freelance</p>
+
+          <h1>Des sites web utiles, rapides et conçus pour votre activité.</h1>
+
+          <p class="hero-lead">
+            Je crée des sites vitrines, boutiques en ligne et outils web sur mesure
+            pour indépendants, artisans et petites entreprises.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button--accent" href="#realisations">Voir mes réalisations</a>
+            <a class="button button--ghost" href="#contact">Parler de votre projet</a>
+          </div>
+
+          <p class="hero-meta">Basé en Île-de-France · Projets partout en France</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="capsule-art">
+            <span class="capsule capsule--1"></span>
+            <span class="capsule capsule--2"></span>
+            <span class="capsule capsule--3"></span>
+            <span class="capsule capsule--4"></span>
+            <span class="capsule capsule--5"></span>
+            <span class="capsule capsule--6"></span>
+            <span class="capsule capsule--7"></span>
+          </div>
+
+          <div class="hero-orbit hero-orbit--one"></div>
+          <div class="hero-orbit hero-orbit--two"></div>
+
+          <div class="floating-note floating-note--dark">
+            <span class="status-dot"></span>
+            Sites & outils web sur mesure
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section id="realisations" class="section section--project">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projet récent</p>
+          <h2>Une réalisation concrète.</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-preview">
+            <div class="project-shot project-shot--desktop">
+              <img src="images/projects/theophil-desktop.webp"
+                alt="Page d’accueil du site e-commerce ThéÔphil sur écran large" />
+            </div>
+
+            <div class="project-shot project-shot--mobile">
+              <img src="images/projects/theophil-mobile.webp" alt="Version mobile du site e-commerce ThéÔphil" />
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <p class="eyebrow">Le projet</p>
+              <h3>Créer une boutique en ligne simple à gérer au quotidien.</h3>
+              <p>
+                Conception d’un site e-commerce complet pour un commerce indépendant :
+                catalogue, fiches produits, parcours de commande, adaptation mobile et
+                personnalisation graphique.
+              </p>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <span>Réalisation</span>
+                <strong>Site e-commerce</strong>
+              </div>
+              <div>
+                <span>Technologies</span>
+                <strong>WordPress / WooCommerce</strong>
+              </div>
+              <div>
+                <span>Travail réalisé</span>
+                <strong>Intégration, responsive, SEO, mise en ligne</strong>
+              </div>
+            </div>
+
+            <div class="tags" aria-label="Technologies utilisées">
+              <span>WordPress</span>
+              <span>WooCommerce</span>
+              <span>E-commerce</span>
+              <span>Responsive</span>
+              <span>SEO</span>
+            </div>
+
+            <a class="text-link" href="https://www.theophil-nantes.com/" target="_blank" rel="noopener noreferrer">
+              Voir le site <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="capsule-divider" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <!-- page wrap
-    ================================================== -->
-    <div id="page" class="s-pagewrap">
-      <!-- # site header 
-        ================================================== -->
-      <header class="s-header">
-        <div class="row s-header__inner">
-          <div class="s-header__block">
-            <div class="s-header__logo">
-              <a class="logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage" />
-              </a>
-            </div>
-
-            <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading section-heading--wide">
+          <div>
+            <p class="eyebrow">Ce que je peux faire pour vous</p>
+            <h2>Des solutions adaptées à votre besoin, sans complexité inutile.</h2>
           </div>
-          <!-- end s-header__block -->
-
-          <nav class="s-header__nav">
-            <ul class="s-header__menu-links">
-              <li class="current">
-                <a class="smoothscroll" href="#intro">Accueil</a>
-              </li>
-              <li><a class="smoothscroll" href="#about">A propos</a></li>
-              <li><a class="smoothscroll" href="#works">Services</a></li>
-              <!-- <li><a class="smoothscroll" href="#works">Projets</a></li> -->
-              <li><a class="smoothscroll" href="#footer">Contact</a></li>
-            </ul>
-            <!-- s-header__menu-links -->
-          </nav>
-          <!-- end s-header__nav -->
+          <p>
+            Je privilégie les solutions simples, solides et faciles à maintenir.
+            La technologie vient après le besoin.
+          </p>
         </div>
-        <!-- end s-header__inner -->
-      </header>
-      <!-- end s-header -->
 
-      <!-- # intro
-        ================================================== -->
-      <section id="intro" class="s-intro target-section">
-        <div class="row s-intro__content width-sixteen-col">
-          <div class="column lg-12 s-intro__content-inner grid-block grid-16">
-            <div class="s-intro__content-text">
-              <div class="s-intro__content-pretitle text-pretitle">Hello</div>
-              <h1 class="s-intro__content-title">
-                Cédric Leroy, <br />
-                création de sites web <br />
-                particuliers & PME.
-              </h1>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Site vitrine</h3>
+            <p>
+              Présenter votre activité, inspirer confiance et générer de nouveaux contacts.
+            </p>
+            <span class="service-detail">Responsive · SEO · Rapide</span>
+          </article>
 
-              <div class="s-intro__content-btns">
-                <a class="smoothscroll btn" href="#about">A propos de moi</a>
-                <a class="smoothscroll btn btn--stroke" href="#footer"
-                  >Devis gratuit</a
-                >
-              </div>
-              <!-- s-intro__content-btns -->
-            </div>
-            <!-- s-intro__content-text -->
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Boutique en ligne</h3>
+            <p>
+              Vendre vos produits ou services avec un parcours d’achat clair et simple à gérer.
+            </p>
+            <span class="service-detail">Catalogue · Paiement · Commandes</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Développement sur mesure</h3>
+            <p>
+              Espaces clients, automatisations, formulaires avancés ou fonctionnalités métier.
+            </p>
+            <span class="service-detail">Backend · APIs · Intégrations</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Maintenance & évolutions</h3>
+            <p>
+              Corrections, mises à jour, optimisations et nouvelles fonctionnalités.
+            </p>
+            <span class="service-detail">Suivi · Sécurité · Évolutions</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--approach">
+      <div class="container approach-grid">
+        <div>
+          <p class="eyebrow eyebrow--light">Mon approche</p>
+          <h2>Un développeur, pas une usine à sites.</h2>
+        </div>
+
+        <div class="approach-content">
+          <p class="approach-lead">
+            Vous échangez directement avec la personne qui conçoit et développe votre projet.
+            Pas d’intermédiaire, pas de solution inutilement compliquée.
+          </p>
+
+          <div class="approach-points">
+            <article>
+              <h3>Pragmatique</h3>
+              <p>Je choisis la solution la plus pertinente pour votre besoin et votre budget.</p>
+            </article>
+            <article>
+              <h3>Technique</h3>
+              <p>Mon expérience full-stack permet d’aller au-delà d’un simple assemblage de templates.</p>
+            </article>
+            <article>
+              <h3>Disponible</h3>
+              <p>Je peux rester présent après la mise en ligne pour faire évoluer votre site.</p>
+            </article>
           </div>
-          <!-- s-intro__content-inner -->
         </div>
-        <!-- s-intro__content -->
+      </div>
+    </section>
 
-        <ul class="s-intro__social social-list">
-          <li>
-            <a
-              href="https://github.com/cdrcleroy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                />
-              </svg>
-              <span class="u-screen-reader-text">Github</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/cédric-leroy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path
-                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                />
-              </svg>
-              <span class="u-screen-reader-text">Linkedin</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:cdrc.leroy@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="100"
-                height="100"
-                viewBox="0 0 50 50"
-              >
-                <path
-                  d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"
-                ></path>
-              </svg>
-              <span class="u-screen-reader-text">Gmail</span>
-            </a>
-          </li>
-        </ul>
-        <!-- end s-intro__social -->
-
-        <div class="s-intro__content-media">
-          <img
-            src="images/bg-personal-website.webp"
-            loading="lazy"
-            srcset="
-              images/bg-personal-website.webp 1x,
-              images/bg-personal-website.webp 2x
-            "
-            alt="Image de fond"
-          />
+    <section id="a-propos" class="section">
+      <div class="container about-grid">
+        <div class="about-title">
+          <p class="eyebrow">À propos</p>
+          <h2>Bonjour, moi c’est Cédric.</h2>
         </div>
-        <!-- s-intro__content-media -->
 
-        <div class="s-intro__scroll-down">
-          <a href="#about" class="smoothscroll">
-            <div class="scroll-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                style="fill: rgba(0, 0, 0, 1)"
-              >
+        <div class="about-copy">
+          <p class="about-lead">
+            Je suis développeur web basé en Île-de-France, avec une expérience
+            principalement orientée backend et applications web.
+          </p>
+
+          <p>
+            En parallèle de mon activité professionnelle, j’accompagne des indépendants
+            et petites entreprises dans la création de leurs sites et outils numériques.
+          </p>
+
+          <p>
+            J’aime construire des solutions simples, propres et réellement utiles,
+            plutôt que d’ajouter de la complexité là où elle n’apporte rien.
+          </p>
+
+          <div class="stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+            <span>WordPress</span>
+            <span>WooCommerce</span>
+            <span>SQL</span>
+          </div>
+
+          <div class="about-links social-links">
+            <a class="icon-link" href="https://github.com/cdrcleroy" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path
-                  d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
-                ></path>
+                  d="M12 2.8a9.4 9.4 0 0 0-3 18.32c.47.09.64-.2.64-.45v-1.83c-2.62.57-3.17-1.11-3.17-1.11-.43-1.09-1.05-1.38-1.05-1.38-.86-.59.06-.58.06-.58.95.07 1.45.98 1.45.98.85 1.45 2.22 1.03 2.76.79.08-.61.33-1.03.6-1.27-2.09-.24-4.29-1.05-4.29-4.65 0-1.03.37-1.87.97-2.53-.1-.24-.42-1.2.09-2.5 0 0 .79-.25 2.59.97A8.98 8.98 0 0 1 12 6.94a8.9 8.9 0 0 1 2.36.32c1.8-1.22 2.59-.97 2.59-.97.51 1.3.19 2.26.09 2.5.61.66.97 1.5.97 2.53 0 3.61-2.2 4.4-4.3 4.64.34.3.64.88.64 1.77v2.63c0 .25.17.54.65.45A9.4 9.4 0 0 0 12 2.8Z">
+                </path>
               </svg>
-            </div>
-            <span class="scroll-text u-screen-reader-text">Descendre</span>
+              <span>GitHub</span>
+            </a>
+
+            <a class="icon-link" href="https://www.linkedin.com/in/cédric-leroy" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.2v9.3M6.5 5.6v.1M10.6 17.5v-5.2c0-2.2 1.2-3.4 3-3.4 1.8 0 2.9 1.2 2.9 3.4v5.2M10.6 9.2v8.3">
+                </path>
+                <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow eyebrow--light">Contact</p>
+          <h2>Vous avez un projet en tête&nbsp;?</h2>
+        </div>
+
+        <div class="contact-content">
+          <p>
+            Même si votre besoin n’est pas encore complètement défini, expliquez-moi
+            votre idée en quelques lignes. Je vous dirai simplement ce qui me semble
+            pertinent et comment je pourrais vous accompagner.
+          </p>
+
+          <a class="button button--light" href="mailto:cdrc.leroy@gmail.com?subject=Projet%20web">
+            M’écrire
           </a>
-        </div>
-        <!-- s-intro__scroll-down -->
-      </section>
-      <!-- end s-intro -->
 
-      <!-- # about
-        ================================================== -->
-      <section id="about" class="s-about target-section">
-        <div class="row s-about__content">
-          <div class="column xl-12">
-            <div class="section-header" data-num="01">
-              <h2 class="text-display-title">A propos de moi.</h2>
-            </div>
-            <!-- end section-header -->
-            <p class="attention-getter">
-              Développeur web passionné, je mets mes compétences au service des
-              particuliers et des petites entreprises pour concevoir des sites
-              internet professionnels et sur-mesure. Que vous ayez besoin d’un
-              site vitrine ou d’un outil plus complexe, je vous accompagne à
-              chaque étape : du conseil initial à la mise en ligne.
-            </p>
+          <div class="contact-meta contact-links">
+            <a class="icon-link icon-link--light" href="mailto:cdrc.leroy@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              <span>cdrc.leroy@gmail.com</span>
+            </a>
 
-            <p class="attention-getter">
-              Ensemble, créons un site web qui reflète parfaitement vos valeurs
-              et vos ambitions.
-            </p>
+            <!-- À activer quand tu veux afficher ton numéro :
+            <a class="icon-link icon-link--light" href="tel:+33XXXXXXXXX">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.2 3.8 9.5 7.5 8 9.4c1.2 2.5 3.1 4.4 5.6 5.6l1.9-1.5 3.7 2.3c.5.3.7.9.5 1.5-.5 1.6-2 2.7-3.7 2.7C9.4 20 4 14.6 4 8c0-1.7 1.1-3.2 2.7-3.7.6-.2 1.2 0 1.5.5Z"></path>
+              </svg>
+              <span>06 XX XX XX XX</span>
+            </a>
+            -->
 
-            <div class="grid-list-items s-about__blocks">
-              <div class="grid-list-items__item s-about__block">
-                <h4 class="s-about__block-title">Expérience</h4>
-
-                <ul class="s-about__list">
-                  <li>
-                    <a href="#0">
-                      Lead Developpeur full stack
-                      <span>Synaps System — 2024</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#0">
-                      Concepteur Développeur d'Applications
-                      <span>Greta — 2024</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!--end s-about__block -->
-
-              <div class="grid-list-items__item s-about__block">
-                <h4 class="s-about__block-title">Compétences</h4>
-
-                <ul class="s-about__list">
-                  <li>Développement Frontend</li>
-                  <li>Développement Backend</li>
-                  <li>Bases de données</li>
-                  <li>Programmation / Scripts</li>
-                </ul>
-              </div>
-              <!--end s-about__block -->
-            </div>
-            <!-- grid-list-items -->
-          </div>
-          <!--end column -->
-        </div>
-        <!--end s-about__content -->
-      </section>
-      <!-- end s-about -->
-
-      <!-- # works
-        ================================================== -->
-      <section id="works" class="s-works target-section">
-        <div class="row">
-          <div class="column xl-12">
-            <div class="section-header" data-num="02">
-              <h2 class="text-display-title">Mes services.</h2>
-            </div>
-            <!-- end section-header -->
+            <span class="contact-location">Île-de-France · France</span>
           </div>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <div class="row counter-items">
-          <div class="column counter-items__item">
-            <div class="num">
-              01.
-              <!-- <span>+</span> -->
-            </div>
-            <h5>Sites professionnels</h5>
-            <p>Des sites modernes, performants et adaptés à vos besoins.</p>
-          </div>
-          <!-- end counter-items__item -->
-
-          <div class="column counter-items__item">
-            <div class="num">
-              02.
-              <!-- <span>+</span> -->
-            </div>
-            <h5>Design responsive</h5>
-            <p>
-              Votre site s’affichera parfaitement sur tous les appareils
-              (ordinateurs, tablettes, smartphones).
-            </p>
-          </div>
-          <!-- end counter-items__item -->
-
-          <div class="column counter-items__item">
-            <div class="num">
-              03.
-              <!-- <span>+</span> -->
-            </div>
-            <h5>Personnalisation complète</h5>
-            <p>
-              Un site conçu sur-mesure pour refléter votre image et vos
-              objectifs.
-            </p>
-          </div>
-          <!-- end counter-items__item -->
-
-          <div class="column counter-items__item">
-            <div class="num">
-              04.
-              <!-- <span>+</span> -->
-            </div>
-            <h5>Conseils personnalisés</h5>
-            <p>
-              Un accompagnement dédié pour vous guider dans vos choix
-              stratégiques en ligne.
-            </p>
-          </div>
-          <!-- end counter-items__item -->
-        </div>
-        <!-- end counter-items -->
-      </section>
-      <!-- end s-works -->
-
-      <!-- # footer 
-        ================================================== -->
-      <footer id="footer" class="s-footer target-section">
-        <div class="row">
-          <div class="column lg-12">
-            <div class="section-header light-on-dark" data-num="03">
-              <h2 class="text-display-title">Restons en contact.</h2>
-            </div>
-            <!-- end section-header -->
-          </div>
-        </div>
-
-        <div class="row s-footer__content">
-          <div class="column xl-6 md-12 s-footer__block s-footer__about">
-            <p class="attention-getter">
-              Vous avez un projet de site web ou des questions ? Je suis là pour
-              vous aider. Contactez-moi pour un devis gratuit ou pour en savoir
-              plus sur mes services.
-            </p>
-          </div>
-          <!-- end section-footer__about -->
-
-          <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
-            <div class="row">
-              <div class="column xl-4 lg-5 md-6 tab-12">
-                <h5>Où me suivre</h5>
-                <ul class="link-list">
-                  <li>
-                    <a
-                      href="https://github.com/cdrcleroy"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Github</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/cédric-leroy"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Linkedin</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="column xl-6 md-6 tab-12">
-                <h5>Me contacter</h5>
-                <ul class="link-list">
-                  <li>
-                    <a href="mailto:cdrc.leroy@gmail.com"
-                      >cdrc.leroy@gmail.com</a
-                    >
-                  </li>
-                  <li><a href="tel:+1975432345">01 23 45 67 89</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- end section-footer__site-links -->
-        </div>
-        <!-- end section-footer__content -->
-
-        <div class="row s-footer__buttons">
-          <div class="column xl-6 tab-12">
-            <a
-              href="mailto:cdrc.leroy@gmail.com"
-              class="btn btn--primary btn--large u-fullwidth"
-              >Devis gratuit</a
-            >
-          </div>
-        </div>
-        <!-- end section-footer__buttons -->
-
-        <div class="row s-footer__bottom">
-          <div class="column xl-6 lg-12">
-            <ul class="s-footer__social social-list">
-              <li>
-                <a
-                  href="https://github.com/cdrcleroy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <path
-                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                    />
-                  </svg>
-                  <span class="u-screen-reader-text">Github</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/cédric-leroy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                    />
-                  </svg>
-                  <span class="u-screen-reader-text">Linkedin</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:cdrc.leroy@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="100"
-                    height="100"
-                    viewBox="0 0 50 50"
-                  >
-                    <path
-                      d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"
-                    ></path>
-                  </svg>
-                  <span class="u-screen-reader-text">Gmail</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- end section-footer__social -->
-
-          <div class="column xl-6 lg-12">
-            <p class="ss-copyright">
-              <span>© Copyright Cédric Leroy 2025</span>
-            </p>
-          </div>
-        </div>
-        <!-- end section-footer__bottom -->
-
-        <div class="ss-go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              style="fill: rgba(0, 0, 0, 1)"
-            >
-              <path
-                d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-              ></path>
-            </svg>
-          </a>
-          <span>Haut de page</span>
-        </div>
-        <!-- end ss-go-top -->
-      </footer>
-      <!-- end s-footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Cédric Leroy</p>
+      <p>Développé simplement en HTML, CSS et JavaScript.</p>
     </div>
-    <!-- end page-wrap -->
+  </footer>
+</body>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
 </html>
