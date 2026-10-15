@@ -24,7 +24,7 @@
   --wine: #8e1139;
 
   --accent: var(--hot-orange);
-  --accent-dark: #d93615;
+  --accent-dark: #b93618;
 
   --container: 1180px;
   --radius: 24px;
@@ -66,6 +66,23 @@ a {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 4px;
+}
+
+.hero a:focus-visible,
+.hero button:focus-visible,
+.section--approach a:focus-visible,
+.section--approach button:focus-visible,
+.section--contact a:focus-visible,
+.section--contact button:focus-visible,
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline-color: var(--cream);
 }
 
 h1,
@@ -122,6 +139,11 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.13em;
   color: var(--accent);
+}
+
+.section--project .eyebrow,
+.section--light .eyebrow {
+  color: var(--accent-dark);
 }
 
 .eyebrow--light {
@@ -665,7 +687,7 @@ p {
 }
 
 .service-number {
-  color: var(--accent);
+  color: var(--accent-dark);
 }
 
 .service-detail {
