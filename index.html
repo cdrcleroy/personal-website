@@ -39,7 +39,14 @@
   <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
   <link rel="manifest" href="/images/icons/site.webmanifest">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/refine.css">
   <script src="js/main.js" defer></script>
 
   <script type="application/ld+json">
@@ -71,7 +78,9 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">CL</span>
+        <div class="brand-mark">
+          <img class="brand-mark" src="/images/icons/favicon.svg" alt="" width="38" height="38">
+        </div>
         <span class="brand-name">Cédric Leroy</span>
       </a>
 
@@ -98,41 +107,18 @@
     <section id="top" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Développeur web freelance</p>
-
-          <h1>Des sites web utiles, rapides et conçus pour votre activité.</h1>
-
-          <p class="hero-lead">
-            Je crée des sites vitrines, boutiques en ligne et outils web sur mesure
-            pour indépendants, artisans et petites entreprises.
-          </p>
-
+          <h1>Sites vitrines et boutiques en ligne pour les commerces et les indépendants.</h1>
+          <p class="hero-lead">Je suis Cédric, développeur web freelance en Île-de-France. Je conçois et développe chaque site moi-même, du premier échange à la mise en ligne.</p>
           <div class="hero-actions">
-            <a class="button button--accent" href="#realisations">Voir mes réalisations</a>
-            <a class="button button--ghost" href="#contact">Parler de votre projet</a>
+            <a class="button button--accent" href="#realisations">Voir ma réalisation</a>
+            <a class="text-link text-link--light" href="#contact">Me parler de votre projet</a>
           </div>
-
-          <p class="hero-meta">Basé en Île-de-France · Projets partout en France</p>
         </div>
-
         <div class="hero-visual" aria-hidden="true">
-          <div class="capsule-art">
-            <span class="capsule capsule--1"></span>
-            <span class="capsule capsule--2"></span>
-            <span class="capsule capsule--3"></span>
-            <span class="capsule capsule--4"></span>
-            <span class="capsule capsule--5"></span>
-            <span class="capsule capsule--6"></span>
-            <span class="capsule capsule--7"></span>
-          </div>
-
-          <div class="hero-orbit hero-orbit--one"></div>
-          <div class="hero-orbit hero-orbit--two"></div>
-
-          <div class="floating-note floating-note--dark">
-            <span class="status-dot"></span>
-            Sites & outils web sur mesure
-          </div>
+          <span class="capsule capsule--1"></span><span class="capsule capsule--2"></span>
+          <span class="capsule capsule--3"></span><span class="capsule capsule--4"></span>
+          <span class="capsule capsule--5"></span><span class="capsule capsule--6"></span>
+          <span class="capsule capsule--7"></span>
         </div>
       </div>
     </section>
